@@ -22,7 +22,7 @@ export default function Resume() {
         <h1 className="text-4xl font-bold mb-8 text-center">My Resume</h1>
         <div className="bg-white/10 p-6 rounded-lg shadow-md backdrop-filter backdrop-blur-sm">
           <Document
-            file="/path-to-your-resume.pdf"
+            file="https://github.com/Nikman226/my-portfolio/blob/master/CV.pdf"
             onLoadSuccess={onDocumentLoadSuccess}
             className="flex justify-center"
           >

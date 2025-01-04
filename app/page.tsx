@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaGithub, FaLinkedin, FaFacebook, FaEnvelope } from 'react-icons/fa'
+import { Github, Linkedin, Facebook, Mail } from 'lucide-react'
 
 export default function Home() {
   const [roleIndex, setRoleIndex] = useState(0)
@@ -36,10 +36,10 @@ export default function Home() {
         <h1 className="text-5xl font-bold mb-4">Abdoul Razack Nikiema</h1>
         <p className="text-2xl mb-8 h-8 text-blue-300">{roles[roleIndex]}</p>
         <div className="flex justify-center space-x-4 mb-8">
-          <SocialLink href="https://github.com/Nikman226" icon={<FaGithub size={24} />} />
-          <SocialLink href="https://www.linkedin.com/in/abdoul-razack-nikiema-b69638225" icon={<FaLinkedin size={24} />} />
-          <SocialLink href="https://www.facebook.com/your-facebook-profile" icon={<FaFacebook size={24} />} />
-          <SocialLink href="mailto:nikiemaabdoulrazack38@gmail.com" icon={<FaEnvelope size={24} />} />
+          <SocialLink href="https://github.com/Nikman226" icon={<Github size={24} />} />
+          <SocialLink href="https://www.linkedin.com/in/abdoul-razack-nikiema-b69638225" icon={<Linkedin size={24} />} />
+          <SocialLink href="https://www.facebook.com/your-facebook-profile" icon={<Facebook size={24} />} />
+          <SocialLink href="mailto:nikiemaabdoulrazack38@gmail.com" icon={<Mail size={24} />} />
         </div>
         <div className="flex justify-center space-x-4">
           <Link href="/about" className="bg-white text-blue-600 py-2 px-6 rounded-full font-bold hover:bg-blue-100 transition duration-300 shadow-md">
@@ -61,3 +61,4 @@ function SocialLink({ href, icon }: { href: string; icon: React.ReactNode }) {
     </a>
   )
 }
+
