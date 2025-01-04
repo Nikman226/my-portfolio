@@ -8,7 +8,7 @@ export default function About() {
         <h1 className="text-4xl font-bold mb-8 text-center">About Me</h1>
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           <Image
-            src="/placeholder.svg?height=300&width=300"
+            src="C:\Users\ASUS\my-portfolio\picture.jpg"
             alt="Abdoul Razack Nikiema"
             width={300}
             height={300}
