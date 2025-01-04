@@ -5,7 +5,7 @@ import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import 'react-pdf/dist/esm/Page/TextLayer.css'
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf.worker.min.js`
 
 export default function Resume() {
   const [numPages, setNumPages] = useState<number | null>(null)
@@ -22,7 +22,7 @@ export default function Resume() {
         <h1 className="text-4xl font-bold mb-8 text-center">My Resume</h1>
         <div className="bg-white/10 p-6 rounded-lg shadow-md backdrop-filter backdrop-blur-sm">
           <Document
-            file="https://github.com/Nikman226/my-portfolio/blob/master/CV.pdf"
+            file="CV.pdf"
             onLoadSuccess={onDocumentLoadSuccess}
             className="flex justify-center"
           >
